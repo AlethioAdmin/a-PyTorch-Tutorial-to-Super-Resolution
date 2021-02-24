@@ -48,4 +48,4 @@ if __name__ == '__main__':
             input = path.join(source_dir, entry)
             sr_res, sr_gan = sr(input)
             sr_res.save(path.join(output_dir, 'srres', entry))
-            sr_res.save(path.join(output_dir, 'srgan', entry))
+            sr_gan.save(path.join(output_dir, 'srgan', entry))
